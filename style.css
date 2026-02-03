@@ -1,111 +1,99 @@
 body {
-    min-width: 1100px;
-    max-width: 1600px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #FFFFFF; 
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    }
-
-    .header {
-    display: block;          /* Activa Flexbox */
-    background-color: #FFFFFF;
-    background-image: url('background_header.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
-    height: 100vh;
-    min-height: 720px; 
-    max-height: 800px;
-   
+  min-width: 1100px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.navegacion{
-   display: flex;       /* Mantenemos tu bloque */
-    text-align: right;    /* Este es el "imán" que empuja el contenido a la derecha */
-    padding-top: 30px;
-    padding-right: 26px;
-    gap: 20px;
-    justify-content: flex-end;
-        
+.header {
+  display: block; /* Activa Flexbox */
+  background-color: #ffffff;
+  background-image: url("Images/background_header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
 }
 
+.navegacion {
+  display: flex; /* Mantenemos tu bloque */
+  text-align: right; /* Este es el "imán" que empuja el contenido a la derecha */
+  padding-top: 30px;
+  padding-right: 26px;
+  gap: 20px;
+  justify-content: flex-end;
+}
 
 .logo {
-    display: flex; /*Requerido para ajustar posición */
-    width: 105px;
-    height: 39px;
-    z-index: 1;
-    background-image: url('logo_coffeeshop_dark.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    
-    
-    
-    
+  display: flex; /*Requerido para ajustar posición */
+  width: 105px;
+  height: 39px;
+  z-index: 1;
+  background-image: url("Images/logo_coffeeshop_dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
-
 
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 26px; /* 30px superior, 26px lateral según tu imagen */
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 26px; /* 30px superior, 26px lateral según tu imagen */
+  align-items: center;
 }
-
 
 /* 2. Contenedor Principal (Grid de 2 columnas) */
 .hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr ; /* Dos columnas iguales */
-    /* Margen lateral de 80px indicado en rojo */
-    gap: 00px;
-    align-items: start;
- 
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  /* Margen lateral de 80px indicado en rojo */
+  gap: 00px;
+  align-items: start;
+
+  justify-content: space-between;
 }
 
 /* 3. Columna Izquierda (Textos) */
 .content-left {
-    max-width: 709px; /* Indicado sobre el título */
-    margin-left: 80px;
-  }
+  max-width: 709px; /* Indicado sobre el título */
+  margin-left: 80px;
+}
 
 .titulo {
-    font-family: "Noto Serif";
-    font-style: italic;
-    font-weight: normal;
-    font-size: 58px;
-    line-height: 72px;
-    color: #FF976B;
-  
-   }
-.subtitulo{
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #ff976b;
+}
+.subtitulo {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 58px;
   line-height: 0px;
   letter-spacing: -1px;
- 
 }
 
 .descripcion {
-    max-width: 683px; /* Indicado sobre el párrafo */
-    margin-top: 28px;
-    font-family: "Noto Serif";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px
-    
+  max-width: 683px; /* Indicado sobre el párrafo */
+  margin-top: 28px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-.horarios{
+.horarios {
   margin-bottom: 40px;
   margin-top: 210px;
   font-family: "Inter";
@@ -113,47 +101,37 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2px;
-  color: #6F6F6F;
+  color: #6f6f6f;
 }
 
 /* 4. Columna Derecha (Imagen y Dirección) */
 .content-right {
-    
   display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Alinea la dirección a la derecha */
-   
-
-  
-    
+  flex-direction: column;
+  align-items: flex-end; /* Alinea la dirección a la derecha */
 }
 
 .main-image {
-    width: 646px;
-    height: 568px;
-    margin: 0px;
-
+  width: 646px;
+  height: 568px;
+  margin: 0px;
 }
 
 .direccion {
-    margin-top: 60px; /* Espacio de 40px debajo de la imagen */
-    background-color: #f0f0f0; /* Si lleva ese fondo gris de la imagen */
-    padding-bottom: 0;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #6F6F6F;
-    margin-right: 25px;
+  margin-top: 60px; /* Espacio de 40px debajo de la imagen */
+  background-color: #f0f0f0; /* Si lleva ese fondo gris de la imagen */
+  padding-bottom: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6f6f;
+  margin-right: 25px;
 }
 
-
-
-
-
 .content {
-  background-color: #FFD9C6;
+  background-color: #ffd9c6;
   padding: 80px 20px;
 }
 
@@ -188,7 +166,7 @@ body {
 }
 
 .btn-primary {
-  background-color: #E76F3C;
+  background-color: #e76f3c;
   color: #fff;
   border: none;
   padding: 12px;
@@ -202,10 +180,10 @@ body {
 }
 
 .terms {
-   display: flex;       /* Alinea los elementos en línea */
+  display: flex; /* Alinea los elementos en línea */
   align-items: center; /* Centra verticalmente el texto con el checkbox */
-  gap: 25px;           /* Crea una separación de 10px entre el cuadro y el texto */
-  cursor: pointer;     /* Cambia el mouse a "manito" al pasar sobre el texto */
+  gap: 25px; /* Crea una separación de 10px entre el cuadro y el texto */
+  cursor: pointer; /* Cambia el mouse a "manito" al pasar sobre el texto */
   font-family: sans-serif;
   font-size: 8px;
 }
@@ -215,12 +193,9 @@ body {
   cursor: pointer;
 }
 
-
-
-
 .footer {
-  background-color: #C85A2A;
-  color: #FFFFFF;
+  background-color: #c85a2a;
+  color: #ffffff;
   padding: 40px 80px;
 }
 
@@ -232,7 +207,7 @@ body {
 
 .social a {
   display: block;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   margin-top: 5px;
   font-size: 14px;
@@ -245,9 +220,7 @@ body {
 copyright {
   margin-top: 20px;
   font-size: 12px;
-
-  }
-
+}
 
 /*<div class="contenedor-flex">">
               <div class="elemento">1</div>
