@@ -12,7 +12,7 @@ body {
 .header {
   display: block; /* Activa Flexbox */
   background-color: #ffffff;
-  background-image: url("Images/background_header.svg");
+  background-image: url("../images/background_header.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -29,6 +29,11 @@ body {
   padding-right: 26px;
   gap: 20px;
   justify-content: flex-end;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .logo {
@@ -36,14 +41,13 @@ body {
   width: 105px;
   height: 39px;
   z-index: 1;
-  background-image: url("Images/logo_coffeeshop_dark.svg");
+  background-image: url("../images/logo_coffeeshop_dark.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-
   position: absolute;
-  margin-left: 40px;
-  margin-top: -70px;
+  margin-left: 30px;
+  margin-top: -30px;
 }
 
 .main-header {
@@ -71,7 +75,7 @@ body {
 }
 
 .titulo {
-  font-family: "Noto Serif";
+  font-family: "Times New Roman";
   font-style: italic;
   font-weight: normal;
   font-size: 58px;
@@ -90,7 +94,7 @@ body {
 .descripcion {
   max-width: 683px; /* Indicado sobre el párrafo */
   margin-top: 28px;
-  font-family: "Noto Serif";
+  font-family: "Inter";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
