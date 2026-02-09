@@ -146,17 +146,17 @@ body {
 }
 
 .reservation-title {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 40px;
 }
 
 .reservation-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
-.reservation-form label {
+.form__label {
   font-size: 14px;
   text-align: left;
 }
@@ -180,16 +180,16 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #d45f32;
+  background-color: #972f06;
 }
 
 .terms {
   display: flex; /* Alinea los elementos en línea */
   align-items: center; /* Centra verticalmente el texto con el checkbox */
-  gap: 25px; /* Crea una separación de 10px entre el cuadro y el texto */
+  gap: 20px; /* Crea una separación de 10px entre el cuadro y el texto */
   cursor: pointer; /* Cambia el mouse a "manito" al pasar sobre el texto */
   font-family: sans-serif;
-  font-size: 8px;
+  font-size: 18px;
 }
 .terms input[type="checkbox"] {
   width: 18px;

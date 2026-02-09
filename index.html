@@ -9,9 +9,9 @@
       content="Un sitio web de una excelente cafeteria"
     />
     <meta name="author" content="NayarDesign" />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -68,32 +68,51 @@
       <h2 class="reservation-title">Reservar una mesa</h2>
 
       <form class="reservation-form">
-        <label>
-          Nombre:
-          <input type="text" required />
-        </label>
+        <label class="form__label" for="nombre">Nombre: </label>
+        <input
+          type="text"
+          required
+          class="form__input"
+          minlength="3"
+          maxlength="20"
+          placeholder="nameplace"
+          id="nombre"
+          required
+        />
 
-        <label>
-          Número de comensales:
-          <input type="number" required />
-        </label>
+        <label class="form__label" for="nocomensales">
+          Número de comensales:</label
+        >
+        <input
+          type="number"
+          required
+          class="form__input"
+          min="1"
+          max="12"
+          placeholder="numero de personas"
+          required
+          id="nocomensales"
+        />
 
-        <label>
-          Fecha y hora:
-          <input type="datetime-local" required />
-        </label>
+        <label class="form__label" for="fechayhora"> Fecha y hora:</label>
 
-        <label>
-          Tu correo electrónico*
-          <input type="email" required />
-        </label>
+        <input
+          type="datetime-local"
+          required
+          placeholder="fecha y hora"
+          id="fechayhora"
+        />
+
+        <label class="form__label" for="email">Tu correo electrónico*</label>
+
+        <input t ype="email" required id="email" placeholder="escribe email" />
+
+        <div class="terms">
+          <input type="checkbox" required id="terminos" />
+        </div>
+        <label class="terms" for="terminos">Acepto los términos de uso</label>
 
         <button type="submit" class="btn-primary">Reservar una mesa</button>
-
-        <label class="terms">
-          <input type="checkbox" required />
-          Acepto los términos de uso
-        </label>
       </form>
     </section>
   </main>
