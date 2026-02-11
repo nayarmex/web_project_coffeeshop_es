@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -67,63 +67,91 @@
     <section class="reservation">
       <h2 class="reservation-title">Reservar una mesa</h2>
 
-      <form class="reservation-form">
-        <label class="form__label" for="nombre">Nombre: </label>
-        <input
-          type="text"
-          required
-          class="form__input"
-          minlength="3"
-          maxlength="20"
-          placeholder="name"
-          id="nombre"
-          required
-        />
+      <fieldset>
+        <form class="reservation-form">
+          <label class="form__label" for="nombre">Nombre: </label>
+          <input
+            type="text"
+            required
+            class="form__input"
+            minlength="3"
+            maxlength="20"
+            placeholder="Nombre"
+            id="nombre"
+            required
+          />
 
-        <label class="form__label" for="nocomensales">
-          Número de comensales:</label
-        >
-        <input
-          type="number"
-          required
-          class="form__input"
-          min="1"
-          max="12"
-          placeholder="numero de personas"
-          required
-          id="nocomensales"
-        />
+          <label class="form__label" for="nocomensales">
+            Número de comensales:</label
+          >
+          <input
+            type="number"
+            required
+            class="form__input"
+            min="1"
+            max="8"
+            placeholder="1-8"
+            required
+            id="nocomensales"
+          />
 
-        <label class="form__label" for="fechayhora"> Fecha y hora:</label>
+          <label class="form__label" for="fechayhora"> Fecha y hora:</label>
 
-        <input
-          type="datetime-local"
-          required
-          placeholder="fecha y hora"
-          id="fechayhora"
-        />
+          <input
+            type="datetime-local"
+            required
+            placeholder="fecha y hora"
+            id="fechayhora"
+          />
 
-        <label class="form__label" for="email">Tu correo electrónico*</label>
+          <label class="form__label" for="email">Tu correo electrónico*</label>
 
-        <input t ype="email" required id="email" placeholder="escribe email" />
+          <input
+            type="email"
+            required
+            id="email"
+            placeholder="email@email.com"
+          />
 
-        <div class="terms">
-          <input type="checkbox" required id="terminos" />
-        </div>
-        <label class="terms" for="terminos">Acepto los términos de uso</label>
+          <button type="submit" class="btn-primary">Reservar una mesa</button>
 
-        <button type="submit" class="btn-primary">Reservar una mesa</button>
-      </form>
+          <div class="terms">
+            <input type="checkbox" required id="terminos" />
+
+            <label class="terms" for="terminos"
+              >Acepto los términos de uso</label
+            >
+          </div>
+        </form>
+      </fieldset>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer-content">
-      <img src="Images/logo_coffeeshop_dark.svg" alt="Triple Espresso" />
+      <img
+        src="images/logo_coffeeshop_light.svg"
+        alt="Triple Espresso"
+        class="footer__logo"
+      />
       <div class="social">
-        <h3>Redes Sociales:</h3>
-        <a href="#" class="redes-sociales">Facebook</a>
-        <a href="#" class="redes-sociales">Instagram</a>
+        <h3 class="title__large">Redes Sociales:</h3>
+
+        <div class="social__icons">
+          <img
+            src="images/facebook_white.svg"
+            alt="Facebook"
+            class="social__icon-img"
+          />
+          <a href="#" class="redes-sociales">Facebook</a>
+
+          <img
+            src="images/instagram_white.svg"
+            alt="Instagram"
+            class="social__icon-img"
+          />
+          <a href="#" class="redes-sociales">Instagram</a>
+        </div>
       </div>
     </div>
 

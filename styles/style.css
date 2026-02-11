@@ -143,48 +143,85 @@ body {
 }
 
 .content {
-  background-color: #ffd9c6;
-  padding: 80px 20px;
+  background-color: #ffd6c5;
+  padding: 20px 20px;
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .reservation {
-  max-width: 420px;
-  margin: 0 auto;
   text-align: center;
 }
 
+fieldset {
+  margin-bottom: 32px;
+}
+
 .reservation-title {
-  font-size: 32px;
-  margin-bottom: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
 }
 
 .reservation-form {
+  max-width: 385px;
+  margin: auto;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .form__label {
-  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
   text-align: left;
 }
 
 .reservation-form input {
   width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border-radius: 4px;
+  height: 60px; /* Según tus flechas de 60px */
   border: 1px solid #ccc;
+  border-radius: 8px; /* El border-radius que querías */
+  padding: 0 15px; /* Espacio interno para que el texto no pegue al borde */
+  box-sizing: border-box; /* Para que el padding no sume al ancho */
+  text-align: left;
+}
+
+::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .btn-primary {
   background-color: #e76f3c;
   color: #fff;
   border: none;
-  padding: 12px;
-  font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  margin-top: 32px;
+  border: 1px solid #ccc;
+  height: 60px; /* Según tus flechas de 60px */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .btn-primary:hover {
@@ -194,19 +231,20 @@ body {
 .terms {
   display: flex; /* Alinea los elementos en línea */
   align-items: center; /* Centra verticalmente el texto con el checkbox */
-  gap: 20px; /* Crea una separación de 10px entre el cuadro y el texto */
+
   cursor: pointer; /* Cambia el mouse a "manito" al pasar sobre el texto */
   font-family: sans-serif;
   font-size: 18px;
+  margin-left: 40px;
 }
 .terms input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 
 .footer {
-  background-color: #c85a2a;
+  background-color: #d35722;
   color: #ffffff;
   padding: 40px 80px;
 }
@@ -214,7 +252,6 @@ body {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .social {
   display: flex;
@@ -222,16 +259,28 @@ body {
   text-decoration: none;
   margin-top: 5px;
   font-size: 18px;
+  background-color: #6f6f6f;
+  width: 110px;
+}
+.social__icons {
+  display: block;
 }
 
-.redes-sociales:hover {
-  color: black;
+.redes-sociales {
+  color: #ffd6c5;
   font-size: 18px;
   text-decoration: underline;
 }
 
-.footer img {
-  width: 120px;
+.redes-sociales:hover {
+  color: #ffd6c5;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.social__icon-img {
+  width: 16px;
+  height: 16px;
 }
 
 .copyright {
